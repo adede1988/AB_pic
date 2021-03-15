@@ -137,13 +137,13 @@
       <CodeComponent name="code">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;&amp;#10;&amp;#10;maskCol = [random.random(), random.random(), random.random()]&amp;#10;        &amp;#10;&amp;#10;folder = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\'&amp;#10;picFiles = os.listdir(folder)&amp;#10;&amp;#10;picFiles = np.random.choice(picFiles, 40, False)&amp;#10;&amp;#10;curOpacity = 0&amp;#10;curOpacity2 = 0&amp;#10;curOpacity3 = 0&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="import * as random from 'random';&amp;#10;var curOpacity, curOpacity2, curOpacity3, folder, maskCol, picFiles;&amp;#10;maskCol = [random.random(), random.random(), random.random()];&amp;#10;folder = &quot;C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\&quot;;&amp;#10;picFiles = os.listdir(folder);&amp;#10;picFiles = np.random.choice(picFiles, 40, false);&amp;#10;curOpacity = 0;&amp;#10;curOpacity2 = 0;&amp;#10;curOpacity3 = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="curSet = np.random.choice(picFiles, 17, false);&amp;#10;shuffle(curSet);&amp;#10;for (var kk = 0, _pj_a = 17; (kk &lt; _pj_a); kk += 1) {&amp;#10;    trials.addData((&quot;img&quot; + kk.toString()), curSet[kk]);&amp;#10;}&amp;#10;ii = 0;&amp;#10;curImage = (folder + curSet[ii]);&amp;#10;checkForOff = true;&amp;#10;checkForOn = false;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="#get the images for the current trial: &amp;#10;&amp;#10;curSet = np.random.choice(picFiles,17, False)&amp;#10;shuffle(curSet)&amp;#10;for kk in range(0,17):&amp;#10;    trials.addData('img'+str(kk), curSet[kk])&amp;#10;&amp;#10;ii = 0&amp;#10;curImage = folder + curSet[ii]&amp;#10;checkForOff = True&amp;#10;checkForOn = False" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="curImage = (folder + curSet[0]);&amp;#10;curOpacity = 0;&amp;#10;curOpacity2 = 0;&amp;#10;curOpacity3 = 0.2;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="curImage = folder + curSet[0]&amp;#10;curOpacity = 0&amp;#10;curOpacity2 = 0&amp;#10;curOpacity3 = .2" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="t = trialClock.getTime()&amp;#10;onSets = np.linspace(stimLen+isi, (stimLen+isi)*15, 15)&amp;#10;offSets = np.linspace(stimLen, (stimLen+isi)*15 - isi, 15)&amp;#10;if checkForOff: #there's an image on screen and we need to know to take it off&amp;#10;    if t&gt;offSets[ii]:&amp;#10;        print(str(t) + &quot;offset!&quot;)&amp;#10;        curOpacity2 = 1&amp;#10;        maskCol = [random.random(), random.random(), random.random()]&amp;#10;        checkForOff = False&amp;#10;        checkForOn = True&amp;#10;else: #the mask is up right now, check for new image&amp;#10;    if t&gt;onSets[ii]:&amp;#10;        print(str(t) + &quot;onSet!&quot;)&amp;#10;        curOpacity2 = 0&amp;#10;        checkForOff = True&amp;#10;        checkForOn = False&amp;#10;        ii = ii + 1&amp;#10;        if ii==15:&amp;#10;            continueRoutine = False&amp;#10;        elif ii==T2_loc+3:&amp;#10;            trials.addData('lastPresent', ii-1)&amp;#10;            continueRoutine = False&amp;#10;        else:&amp;#10;            curImage = folder + curSet[ii]&amp;#10;            if T1_loc-1==ii:&amp;#10;                curOpacity = 1&amp;#10;            elif T2_loc-1==ii:&amp;#10;                curOpacity3 = 1&amp;#10;            else:&amp;#10;                curOpacity = 0&amp;#10;                curOpacity3 = 0&amp;#10;            &amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="t = trialClock.getTime();&amp;#10;onSets = np.linspace((stimLen + isi), ((stimLen + isi) * 15), 15);&amp;#10;offSets = np.linspace(stimLen, (((stimLen + isi) * 15) - isi), 15);&amp;#10;if (checkForOff) {&amp;#10;    if ((t &gt; offSets[ii])) {&amp;#10;        console.log((t.toString() + &quot;offset!&quot;));&amp;#10;        curOpacity2 = 1;&amp;#10;        maskCol = [random.random(), random.random(), random.random()];&amp;#10;        checkForOff = false;&amp;#10;        checkForOn = true;&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((t &gt; onSets[ii])) {&amp;#10;        console.log((t.toString() + &quot;onSet!&quot;));&amp;#10;        curOpacity2 = 0;&amp;#10;        checkForOff = true;&amp;#10;        checkForOn = false;&amp;#10;        ii = (ii + 1);&amp;#10;        if ((ii === 15)) {&amp;#10;            continueRoutine = false;&amp;#10;        } else {&amp;#10;            if ((ii === (T2_loc + 3))) {&amp;#10;                trials.addData(&quot;lastPresent&quot;, (ii - 1));&amp;#10;                continueRoutine = false;&amp;#10;            } else {&amp;#10;                curImage = (folder + curSet[ii]);&amp;#10;                if (((T1_loc - 1) === ii)) {&amp;#10;                    curOpacity = 1;&amp;#10;                } else {&amp;#10;                    if (((T2_loc - 1) === ii)) {&amp;#10;                        curOpacity3 = 1;&amp;#10;                    } else {&amp;#10;                        curOpacity = 0;&amp;#10;                        curOpacity3 = 0;&amp;#10;                    }&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="t = trialClock.getTime()&amp;#10;onSets = np.linspace(stimLen+isi, (stimLen+isi)*15, 15)&amp;#10;offSets = np.linspace(stimLen, (stimLen+isi)*15 - isi, 15)&amp;#10;if checkForOff: #there's an image on screen and we need to know to take it off&amp;#10;    if t&gt;offSets[ii]:&amp;#10;        print(str(t) + &quot;offset!&quot;)&amp;#10;        curOpacity2 = 1&amp;#10;        maskCol = [random.random(), random.random(), random.random()]&amp;#10;        checkForOff = False&amp;#10;        checkForOn = True&amp;#10;else: #the mask is up right now, check for new image&amp;#10;    if t&gt;onSets[ii]:&amp;#10;        print(str(t) + &quot;onSet!&quot;)&amp;#10;        curOpacity2 = 0&amp;#10;        checkForOff = True&amp;#10;        checkForOn = False&amp;#10;        ii = ii + 1&amp;#10;        if ii==15:&amp;#10;            continueRoutine = False&amp;#10;        elif ii==T2_loc+3:&amp;#10;            trials.addData('lastPresent', ii-1)&amp;#10;            continueRoutine = False&amp;#10;        else:&amp;#10;            curImage = folder + curSet[ii]&amp;#10;            if T1_loc-1==ii:&amp;#10;                if random.random()&lt;.4: #skip target 1&amp;#10;                    curImage = folder + curSet[15]       &amp;#10;                    trials.addData('skip1', 1)&amp;#10;                    skip1 = True&amp;#10;                else:&amp;#10;                    trials.addData('skip1', 0)&amp;#10;                    skip1 = False&amp;#10;                curOpacity = 1&amp;#10;            elif T2_loc-1==ii:&amp;#10;                if random.random()&lt;.4: #skip target 2&amp;#10;                    curImage = folder + curSet[16]      &amp;#10;                    trials.addData('skip2', 1)&amp;#10;                    skip2 = True&amp;#10;                else:&amp;#10;                    trials.addData('skip2', 0)&amp;#10;                    skip2 = False&amp;#10;                &amp;#10;                curOpacity3 = 1&amp;#10;            else:&amp;#10;                curOpacity = 0&amp;#10;                curOpacity3 = 0&amp;#10;            &amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="t = trialClock.getTime();&amp;#10;onSets = np.linspace((stimLen + isi), ((stimLen + isi) * 15), 15);&amp;#10;offSets = np.linspace(stimLen, (((stimLen + isi) * 15) - isi), 15);&amp;#10;if (checkForOff) {&amp;#10;    if ((t &gt; offSets[ii])) {&amp;#10;        console.log((t.toString() + &quot;offset!&quot;));&amp;#10;        curOpacity2 = 1;&amp;#10;        maskCol = [random.random(), random.random(), random.random()];&amp;#10;        checkForOff = false;&amp;#10;        checkForOn = true;&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((t &gt; onSets[ii])) {&amp;#10;        console.log((t.toString() + &quot;onSet!&quot;));&amp;#10;        curOpacity2 = 0;&amp;#10;        checkForOff = true;&amp;#10;        checkForOn = false;&amp;#10;        ii = (ii + 1);&amp;#10;        if ((ii === 15)) {&amp;#10;            continueRoutine = false;&amp;#10;        } else {&amp;#10;            if ((ii === (T2_loc + 3))) {&amp;#10;                trials.addData(&quot;lastPresent&quot;, (ii - 1));&amp;#10;                continueRoutine = false;&amp;#10;            } else {&amp;#10;                curImage = (folder + curSet[ii]);&amp;#10;                if (((T1_loc - 1) === ii)) {&amp;#10;                    if ((random.random() &lt; 0.4)) {&amp;#10;                        curImage = (folder + curSet[15]);&amp;#10;                        trials.addData(&quot;skip1&quot;, 1);&amp;#10;                        skip1 = true;&amp;#10;                    } else {&amp;#10;                        trials.addData(&quot;skip1&quot;, 0);&amp;#10;                        skip1 = false;&amp;#10;                    }&amp;#10;                    curOpacity = 1;&amp;#10;                } else {&amp;#10;                    if (((T2_loc - 1) === ii)) {&amp;#10;                        if ((random.random() &lt; 0.4)) {&amp;#10;                            curImage = (folder + curSet[16]);&amp;#10;                            trials.addData(&quot;skip2&quot;, 1);&amp;#10;                            skip2 = true;&amp;#10;                        } else {&amp;#10;                            trials.addData(&quot;skip2&quot;, 0);&amp;#10;                            skip2 = false;&amp;#10;                        }&amp;#10;                        curOpacity3 = 1;&amp;#10;                    } else {&amp;#10;                        curOpacity = 0;&amp;#10;                        curOpacity3 = 0;&amp;#10;                    }&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
@@ -152,7 +152,7 @@
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
       <PolygonComponent name="polygon">
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="fillColor" updates="constant" val="$[1,0,0]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
@@ -177,7 +177,7 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
       <PolygonComponent name="polygon_3">
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="fillColor" updates="constant" val="$[0,0,1]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
@@ -283,22 +283,22 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="flipper = false;&amp;#10;trials.addData(&quot;flipper&quot;, flipper);&amp;#10;options = [(folder + curSet[(T1_loc - 1)]), (folder + curSet[15]), (folder + curSet[(T2_loc - 1)]), (folder + curSet[16])];&amp;#10;shuffle(options);&amp;#10;opt1 = options[0];&amp;#10;opt2 = options[1];&amp;#10;opt3 = options[2];&amp;#10;opt4 = options[3];&amp;#10;trials.addData(&quot;opt1_t1&quot;, opt1);&amp;#10;trials.addData(&quot;opt2_t1&quot;, opt2);&amp;#10;trials.addData(&quot;opt3_t1&quot;, opt3);&amp;#10;trials.addData(&quot;opt4_t1&quot;, opt4);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="flipper = False&amp;#10;#if random.random()&gt;.5:&amp;#10;#    flipper = True&amp;#10;trials.addData('flipper', flipper)&amp;#10;&amp;#10;options = [folder + curSet[T1_loc-1], folder + curSet[15], folder + curSet[T2_loc-1], folder + curSet[16]]&amp;#10;shuffle(options)&amp;#10;opt1 = options[0]&amp;#10;opt2 = options[1]&amp;#10;opt3 = options[2]&amp;#10;opt4 = options[3]&amp;#10;trials.addData('opt1_t1', opt1)&amp;#10;trials.addData('opt2_t1', opt2)&amp;#10;trials.addData('opt3_t1', opt3)&amp;#10;trials.addData('opt4_t1', opt4)&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="flipper = false;&amp;#10;trials.addData(&quot;flipper&quot;, flipper);&amp;#10;options = [(folder + curSet[(T1_loc - 1)])];&amp;#10;shuffle(options);&amp;#10;opt1 = options[0];&amp;#10;trials.addData(&quot;opt1_t1&quot;, opt1);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="flipper = False&amp;#10;#if random.random()&gt;.5:&amp;#10;#    flipper = True&amp;#10;trials.addData('flipper', flipper)&amp;#10;&amp;#10;options = [folder + curSet[T1_loc-1]]&amp;#10;shuffle(options)&amp;#10;opt1 = options[0]&amp;#10;trials.addData('opt1_t1', opt1)&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if (((key_resp.keys === &quot;right&quot;) &amp;&amp; (skip1 === false))) {&amp;#10;    cor1 = true;&amp;#10;} else {&amp;#10;    if (((key_resp.keys === &quot;left&quot;) &amp;&amp; (skip1 === true))) {&amp;#10;        cor1 = true;&amp;#10;    } else {&amp;#10;        cor1 = false;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if key_resp.keys == 'right' and skip1 == False:&amp;#10;    cor1 = True&amp;#10;elif key_resp.keys == 'left' and skip1 == True:&amp;#10;    cor1 = True&amp;#10;else: &amp;#10;    cor1 = False" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_2" valType="code"/>
       </CodeComponent>
       <ImageComponent name="option4_t1">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
@@ -333,7 +333,7 @@
         <Param name="name" updates="None" val="option1_t1" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-.3, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -348,7 +348,7 @@
       <ImageComponent name="option2_t1">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
@@ -373,7 +373,7 @@
       <ImageComponent name="option3_t1">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
@@ -445,15 +445,15 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="options = [(folder + curSet[(T1_loc - 1)]), (folder + curSet[15]), (folder + curSet[(T2_loc - 1)]), (folder + curSet[16])];&amp;#10;shuffle(options);&amp;#10;opt1 = options[0];&amp;#10;opt2 = options[1];&amp;#10;opt3 = options[2];&amp;#10;opt4 = options[3];&amp;#10;trials.addData(&quot;opt1_t1&quot;, opt1);&amp;#10;trials.addData(&quot;opt2_t1&quot;, opt2);&amp;#10;trials.addData(&quot;opt3_t1&quot;, opt3);&amp;#10;trials.addData(&quot;opt4_t1&quot;, opt4);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="options = [folder + curSet[T1_loc-1], folder + curSet[15], folder + curSet[T2_loc-1], folder + curSet[16]]&amp;#10;shuffle(options)&amp;#10;opt1 = options[0]&amp;#10;opt2 = options[1]&amp;#10;opt3 = options[2]&amp;#10;opt4 = options[3]&amp;#10;trials.addData('opt1_t1', opt1)&amp;#10;trials.addData('opt2_t1', opt2)&amp;#10;trials.addData('opt3_t1', opt3)&amp;#10;trials.addData('opt4_t1', opt4)&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="options = [(folder + curSet[(T2_loc - 1)])];&amp;#10;shuffle(options);&amp;#10;opt1 = options[0];&amp;#10;trials.addData(&quot;opt1_t1&quot;, opt1);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="options = [folder + curSet[T2_loc-1]]&amp;#10;shuffle(options)&amp;#10;opt1 = options[0]&amp;#10;&amp;#10;trials.addData('opt1_t1', opt1)&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if (((key_resp.keys === &quot;right&quot;) &amp;&amp; (skip2 === false))) {&amp;#10;    cor2 = true;&amp;#10;} else {&amp;#10;    if (((key_resp.keys === &quot;left&quot;) &amp;&amp; (skip2 === true))) {&amp;#10;        cor2 = true;&amp;#10;    } else {&amp;#10;        cor2 = false;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if key_resp.keys == 'right' and skip2 == False:&amp;#10;    cor2 = True&amp;#10;elif key_resp.keys == 'left' and skip2 == True:&amp;#10;    cor2 = True&amp;#10;else: &amp;#10;    cor2 = False" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_3" valType="code"/>
       </CodeComponent>
@@ -470,7 +470,7 @@
         <Param name="name" updates="None" val="option1_t2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.3, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -485,7 +485,7 @@
       <ImageComponent name="option2_t2">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
@@ -510,7 +510,7 @@
       <ImageComponent name="option3_t2">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
@@ -535,7 +535,7 @@
       <ImageComponent name="option4_t2">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
@@ -677,6 +677,168 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="optionShow">
+      <CodeComponent name="code_5">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;&amp;#10; &amp;#10;&amp;#10;folder = '.\\resources\\'&amp;#10;picFiles = os.listdir(folder)&amp;#10;&amp;#10;picFiles = np.random.choice(picFiles, 40, False)&amp;#10;&amp;#10;curOpacity = 0&amp;#10;curOpacity2 = 0&amp;#10;curOpacity3 = .2&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="import * as random from 'random';&amp;#10;var curOpacity, curOpacity2, curOpacity3, folder, picFiles;&amp;#10;folder = &quot;.\\resources\\&quot;;&amp;#10;picFiles = os.listdir(folder);&amp;#10;picFiles = np.random.choice(picFiles, 40, false);&amp;#10;curOpacity = 0;&amp;#10;curOpacity2 = 0;&amp;#10;curOpacity3 = 0.2;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="curSet = np.random.choice(picFiles, 17, false);&amp;#10;shuffle(curSet);&amp;#10;for (var kk = 0, _pj_a = 17; (kk &lt; _pj_a); kk += 1) {&amp;#10;    trials.addData((&quot;img&quot; + kk.toString()), curSet[kk]);&amp;#10;}&amp;#10;ii = 0;&amp;#10;curImage = (folder + curSet[ii]);&amp;#10;checkForOff = true;&amp;#10;checkForOn = false;&amp;#10;options = [(folder + curSet[(T1_loc - 1)]), (folder + curSet[(T2_loc - 1)])];&amp;#10;shuffle(options);&amp;#10;opt1 = options[0];&amp;#10;opt2 = options[1];&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;curSet = np.random.choice(picFiles,17, False)&amp;#10;shuffle(curSet)&amp;#10;for kk in range(0,17):&amp;#10;    trials.addData('img'+str(kk), curSet[kk])&amp;#10;&amp;#10;ii = 0&amp;#10;curImage = folder + curSet[ii]&amp;#10;checkForOff = True&amp;#10;checkForOn = False&amp;#10;&amp;#10;options = [folder + curSet[T1_loc-1],  folder + curSet[T2_loc-1]]&amp;#10;shuffle(options)&amp;#10;opt1 = options[0]&amp;#10;opt2 = options[1]&amp;#10;#opt3 = options[2]&amp;#10;#opt4 = options[3]" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_5" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="option1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$opt1" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="option1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-.3, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="option2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$opt2" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="option2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.3, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="option3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$opt3" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="option3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(.3, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="option4">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$opt4" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="option4" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="feedback">
+      <CodeComponent name="code_6">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((cor1 === true) &amp;&amp; (cor2 === true))) {&amp;#10;    snip1 = &quot;2/2 Correct&quot;;&amp;#10;} else {&amp;#10;    if (((cor1 === true) || (cor2 === true))) {&amp;#10;        snip1 = &quot;1/2 Correct&quot;;&amp;#10;    } else {&amp;#10;        snip1 = &quot;BOTH WRONG&quot;;&amp;#10;    }&amp;#10;}&amp;#10;feedback = snip1;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if cor1 == True and cor2==True:&amp;#10;    snip1 = &quot;2/2 Correct&quot;&amp;#10;elif cor1==True or cor2==True: &amp;#10;    snip1 = &quot;1/2 Correct&quot;&amp;#10;else:&amp;#10;    snip1 = &quot;BOTH WRONG&quot;&amp;#10;&amp;#10;&amp;#10;feedback = snip1" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_6" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="feedbackText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="feedbackText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$feedback" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
   </Routines>
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="trials">
@@ -690,9 +852,11 @@
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="optionShow"/>
     <Routine name="trial"/>
     <Routine name="response1"/>
     <Routine name="response2"/>
+    <Routine name="feedback"/>
     <Routine name="break_2"/>
     <LoopTerminator name="trials"/>
   </Flow>

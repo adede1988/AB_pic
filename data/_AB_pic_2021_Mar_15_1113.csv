@@ -1,4 +1,0 @@
-﻿trialType,cndTyp,lag,T1_loc,gap,T2_loc,primePos,stimLen,isi,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,displayPicture.started,displayPicture.stopped,text.started,text.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-AB,lag4,4,4,0.0,8,103,0.25,0.04,0,0,0,255,6.394350699963979,None,10.068727999925613,None,,001,2021_Mar_15_1113,AB_pic,2020.2.10,59.9910253441098,
-AB,prime,4,5,0.0,9,7,0.25,0.04,0,1,1,145,11.08532670000568,None,14.818490499979816,None,,001,2021_Mar_15_1113,AB_pic,2020.2.10,59.9910253441098,
-,,,,,,,,,,,,,15.835027699940838,None,,,,,,,,,
