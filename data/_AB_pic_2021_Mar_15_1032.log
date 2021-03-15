@@ -1,0 +1,14 @@
+0.8051 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+3.9701 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+4.8367 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000231FFA81940>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000231FFA3CF60>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.8371 	EXP 	window1: mouseVisible = True
+4.8372 	EXP 	window1: recordFrameIntervals = False
+5.0030 	EXP 	window1: recordFrameIntervals = True
+5.1865 	EXP 	window1: recordFrameIntervals = False
+5.2575 	EXP 	Created displayPicture = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayPicture', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+5.2587 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 0., 0.]), fillColorSpace='rgb', fillRGB=array([1., 0., 0.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.6, 0.6]), units='height', vertices=ndarray(...), win=Window(...))
+5.3230 	EXP 	Imported conditionAB.xlsx as conditions, 360 conditions, 9 params
+5.3245 	EXP 	Created sequence: random, trialTypes=360, nReps=1, seed=None
+5.3248 	EXP 	New trial (rep=0, index=0): OrderedDict([('trialType', 'AB'), ('cndTyp', 'lag3'), ('lag', 3), ('T1_loc', 3), ('gap', 0.0), ('T2_loc', 6), ('primePos', 102), ('stimLen', 2), ('isi', 0.04)])
+5.3252 	ERROR 	Couldn't find image ; check path? (tried: C:\Users\Employee\Google Drive\UP\MyResearch\TaskProgramming\AB_pic)
+5.3955 	EXP 	window1: mouseVisible = True

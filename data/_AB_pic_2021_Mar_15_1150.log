@@ -1,0 +1,37 @@
+0.7879 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+3.6337 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+4.5064 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F7145BFE80>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F7145104E0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.5067 	EXP 	window1: mouseVisible = True
+4.5068 	EXP 	window1: recordFrameIntervals = False
+4.6726 	EXP 	window1: recordFrameIntervals = True
+4.8560 	EXP 	window1: recordFrameIntervals = False
+4.9262 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-3.0, fillColor=array([1., 0., 0.]), fillColorSpace='rgb', fillRGB=array([1., 0., 0.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.6, 0.6]), units='height', vertices=ndarray(...), win=Window(...))
+4.9307 	EXP 	Created displayPicture = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayPicture', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+4.9322 	EXP 	Created polygon_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-5.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='polygon_2', opacity=0.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.9348 	EXP 	Created option1_t1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option1_t1', opacity=1.0, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+4.9372 	EXP 	Created option2_t1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option2_t1', opacity=1.0, ori=0.0, pos=array([0.3, 0. ]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+4.9397 	EXP 	Created option1_t2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option1_t2', opacity=1.0, ori=0.0, pos=array([0.3, 0. ]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+4.9421 	EXP 	Created option2_t2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option2_t2', opacity=1.0, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+4.9804 	EXP 	Imported conditionAB.xlsx as conditions, 140 conditions, 9 params
+4.9809 	EXP 	Created sequence: random, trialTypes=140, nReps=1, seed=None
+4.9812 	EXP 	New trial (rep=0, index=0): OrderedDict([('trialType', 'AB'), ('cndTyp', 'lag2'), ('lag', 2), ('T1_loc', 4), ('gap', 0), ('T2_loc', 6), ('primePos', 103), ('stimLen', 0.2), ('isi', 0.05)])
+5.0719 	EXP 	polygon: autoDraw = True
+5.0719 	EXP 	polygon: opacity = 0.0
+5.0719 	EXP 	displayPicture: autoDraw = True
+5.0719 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.0719 	EXP 	polygon_2: autoDraw = True
+5.0893 	EXP 	polygon: opacity = 0.0
+5.0893 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.1059 	EXP 	polygon: opacity = 0.0
+5.1059 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.1226 	EXP 	polygon: opacity = 0.0
+5.1226 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.1392 	EXP 	polygon: opacity = 0.0
+5.1392 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.1559 	EXP 	polygon: opacity = 0.0
+5.1559 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.1726 	EXP 	polygon: opacity = 0.0
+5.1726 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.1892 	EXP 	polygon: opacity = 0.0
+5.1892 	EXP 	displayPicture: image = 'C:\\Users\\Employee\\Google Drive\\UP\\MyResearch\\TaskProgramming\\AB_pic\\resources\\sheep.jpg'
+5.2752 	EXP 	window1: mouseVisible = True
