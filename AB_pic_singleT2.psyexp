@@ -476,7 +476,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Did you see an X? " valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Did you see a blender? " valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -762,7 +762,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="In this task you will be focusing on the computer screen and attempting to perceive images that appear very briefly. Each image will depict a single everyday object. On each trial of the task, you will first be presented with two images for 3 seconds. You should try to hold these images in mind. Then, a + will appear in the middle of the computer screen. Focus your gaze on the +. A series of images will be presented quickly, one at a time, in the middle of the screen. After the rapid presentation, you will see each of the two original images again. For each of them, please indicate if you saw the image in the rapid presentation. Press the right arrow key to indicate “I saw this image”, and the left arrow key to indicate “I did not see this image”. You will have a block of training trials. For these trials, you will get feedback about whether you are right or wrong at the end of each trial. &amp;#10;&amp;#10;Press the SPACEBAR to begin the training trials" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="In this task you will be focusing on the computer screen and attempting to perceive images that appear very briefly. Each image will depict a single everyday object. On each trial of the task, you will first be presented with an image for 3 seconds. You should try to hold this image in mind. Then, a + will appear in the middle of the computer screen. Focus your gaze on the +. A series of images will be presented quickly, one at a time, in the middle of the screen. After the rapid presentation, you will see each of the original image again. Please indicate if you saw the image in the rapid presentation. Press the right arrow key to indicate “I saw this image”, and the left arrow key to indicate “I did not see this image”. In addition, be on the lookout for a blender in every trial, as you will be asked if you saw a blender. You will have a block of training trials. For these trials, you will get feedback about whether you are right or wrong at the end of each trial. &amp;#10;&amp;#10;Press the SPACEBAR to begin the training trials" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
       </TextComponent>
@@ -2115,7 +2115,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Did you see an X? " valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Did you see a blender? " valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
