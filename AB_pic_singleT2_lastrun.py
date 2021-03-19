@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on March 19, 2021, at 11:30
+    on March 19, 2021, at 12:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1616,7 +1616,7 @@ for thisTrials2 in trials2:
     correctRecord.append(1)
     stimTimRec.append(curStimTim)
     stimTimRec.append(0)
-    stimTimRec.append(.3)
+    stimTimRec.append(.2)
     #model = LogisticRegression(solver='liblinear', random_state=0).fit(curStimTim, correctRecord)
     if len(correctRecord)>5:
         
@@ -1648,7 +1648,7 @@ for thisTrials2 in trials2:
         trials2.addData("B0", B0)
         trials2.addData("B1", B1)
     
-        curStimTim = -((np.log(1/.85 - 1) + B0) / B1)
+        curStimTim = -((np.log(1/.80 - 1) + B0) / B1)
         curStimTim = curStimTim
     
     
