@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on March 17, 2021, at 12:00
+    on March 18, 2021, at 11:53
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -108,25 +108,17 @@ option1 = visual.ImageStim(
     win=win,
     name='option1', 
     image='sin', mask=None,
-    ori=0, pos=(-.3, 0), size=(0.25, 0.25),
+    ori=0, pos=(0, .3), size=(0.25, 0.25),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-option2 = visual.ImageStim(
-    win=win,
-    name='option2', 
-    image='sin', mask=None,
-    ori=0, pos=(0.3, 0), size=(0.25, 0.25),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
 text_2 = visual.TextStim(win=win, name='text_2',
     text='+',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-2.0);
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -189,14 +181,13 @@ polygon_5 = visual.ShapeStim(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[0,0,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-option1_t2 = visual.ImageStim(
-    win=win,
-    name='option1_t2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.25, 0.25),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
+text_6 = visual.TextStim(win=win, name='text_6',
+    text='Did you see an X? ',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
 key_resp_2 = keyboard.Keyboard()
 
 # Initialize components for Routine "feedback"
@@ -237,49 +228,56 @@ text_4 = visual.TextStim(win=win, name='text_4',
     depth=0.0);
 key_resp_7 = keyboard.Keyboard()
 
-# Initialize components for Routine "optionsMain"
-optionsMainClock = core.Clock()
-option1_2 = visual.ImageStim(
+# Initialize components for Routine "optionsMain_2"
+optionsMain_2Clock = core.Clock()
+option1_3 = visual.ImageStim(
     win=win,
-    name='option1_2', 
+    name='option1_3', 
     image='sin', mask=None,
-    ori=0, pos=(-.3, 0), size=(0.25, 0.25),
+    ori=0, pos=(0, .3), size=(0.25, 0.25),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-option2_2 = visual.ImageStim(
-    win=win,
-    name='option2_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0.3, 0), size=(0.25, 0.25),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-text_5 = visual.TextStim(win=win, name='text_5',
+text_7 = visual.TextStim(win=win, name='text_7',
     text='+',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-2.0);
 
-# Initialize components for Routine "trialMain2"
-trialMain2Clock = core.Clock()
-displayPicture_3 = visual.ImageStim(
+# Initialize components for Routine "trial_2"
+trial_2Clock = core.Clock()
+# Set experiment start values for variable component curOpacity3_3
+curOpacity3_3 = ''
+curOpacity3_3Container = []
+# Set experiment start values for variable component maskCol_3
+maskCol_3 = ''
+maskCol_3Container = []
+# Set experiment start values for variable component curOpacity2_3
+curOpacity2_3 = ''
+curOpacity2_3Container = []
+# Set experiment start values for variable component curOpacity_3
+curOpacity_3 = ''
+curOpacity_3Container = []
+# Set experiment start values for variable component curImage_3
+curImage_3 = ''
+curImage_3Container = []
+displayPicture_4 = visual.ImageStim(
     win=win,
-    name='displayPicture_3', 
+    name='displayPicture_4', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.25, 0.25),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-polygon_13 = visual.Rect(
-    win=win, name='polygon_13',
+    texRes=128, interpolate=True, depth=-6.0)
+polygon_16 = visual.Rect(
+    win=win, name='polygon_16',
     width=(0.25, 0.25)[0], height=(0.25, 0.25)[1],
     ori=0, pos=(0, 0),
     lineWidth=0, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
-    opacity=1.0, depth=-2.0, interpolate=True)
+    opacity=1.0, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "response1Main"
 response1MainClock = core.Clock()
@@ -300,24 +298,23 @@ option1_t1_2 = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 key_resp_6 = keyboard.Keyboard()
 
-# Initialize components for Routine "response2Main"
-response2MainClock = core.Clock()
-polygon_6 = visual.ShapeStim(
-    win=win, name='polygon_6', vertices='star7',
+# Initialize components for Routine "response2_2"
+response2_2Clock = core.Clock()
+polygon_17 = visual.ShapeStim(
+    win=win, name='polygon_17', vertices='star7',
     size=(0.7, 0.7),
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[0,0,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-option1_t2_2 = visual.ImageStim(
-    win=win,
-    name='option1_t2_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.25, 0.25),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-key_resp_5 = keyboard.Keyboard()
+text_8 = visual.TextStim(win=win, name='text_8',
+    text='Did you see an X? ',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+key_resp_8 = keyboard.Keyboard()
 
 # Initialize components for Routine "break_2"
 break_2Clock = core.Clock()
@@ -471,15 +468,14 @@ for thisTrial in trials:
     checkForOn = False
     
     options = [folder + curSet[T1_loc-1],  folder + curSet[T2_loc-1]]
-    shuffle(options)
+    #shuffle(options)
     opt1 = options[0]
     opt2 = options[1]
     #opt3 = options[2]
     #opt4 = options[3]
     option1.setImage(opt1)
-    option2.setImage(opt2)
     # keep track of which components have finished
-    optionsComponents = [option1, option2, text_2]
+    optionsComponents = [option1, text_2]
     for thisComponent in optionsComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -518,23 +514,6 @@ for thisTrial in trials:
                 option1.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(option1, 'tStopRefresh')  # time at next scr refresh
                 option1.setAutoDraw(False)
-        
-        # *option2* updates
-        if option2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            option2.frameNStart = frameN  # exact frame index
-            option2.tStart = t  # local t and not account for scr refresh
-            option2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(option2, 'tStartRefresh')  # time at next scr refresh
-            option2.setAutoDraw(True)
-        if option2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > option2.tStartRefresh + 2.75-frameTolerance:
-                # keep track of stop time/frame for later
-                option2.tStop = t  # not accounting for scr refresh
-                option2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(option2, 'tStopRefresh')  # time at next scr refresh
-                option2.setAutoDraw(False)
         
         # *text_2* updates
         if text_2.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
@@ -576,8 +555,6 @@ for thisTrial in trials:
             thisComponent.setAutoDraw(False)
     trials.addData('option1.started', option1.tStartRefresh)
     trials.addData('option1.stopped', option1.tStopRefresh)
-    trials.addData('option2.started', option2.tStartRefresh)
-    trials.addData('option2.stopped', option2.tStopRefresh)
     trials.addData('text_2.started', text_2.tStartRefresh)
     trials.addData('text_2.stopped', text_2.tStopRefresh)
     
@@ -646,6 +623,7 @@ for thisTrial in trials:
                             skip1 = False
                         curOpacity = 1
                     elif T2_loc-1==ii:
+                        curImage = "X_target.jpg"
                         if random.random()<skipProb: #skip target 2
                             curImage = folder + curSet[16]      
                             trials.addData('skip2', 1)
@@ -844,12 +822,11 @@ for thisTrial in trials:
     
     trials.addData('opt1_t1', opt1)
     
-    option1_t2.setImage(opt1)
     key_resp_2.keys = []
     key_resp_2.rt = []
     _key_resp_2_allKeys = []
     # keep track of which components have finished
-    response2Components = [polygon_5, option1_t2, key_resp_2]
+    response2Components = [polygon_5, text_6, key_resp_2]
     for thisComponent in response2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -881,14 +858,14 @@ for thisTrial in trials:
             win.timeOnFlip(polygon_5, 'tStartRefresh')  # time at next scr refresh
             polygon_5.setAutoDraw(True)
         
-        # *option1_t2* updates
-        if option1_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *text_6* updates
+        if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            option1_t2.frameNStart = frameN  # exact frame index
-            option1_t2.tStart = t  # local t and not account for scr refresh
-            option1_t2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(option1_t2, 'tStartRefresh')  # time at next scr refresh
-            option1_t2.setAutoDraw(True)
+            text_6.frameNStart = frameN  # exact frame index
+            text_6.tStart = t  # local t and not account for scr refresh
+            text_6.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+            text_6.setAutoDraw(True)
         
         # *key_resp_2* updates
         waitOnFlip = False
@@ -935,17 +912,17 @@ for thisTrial in trials:
             thisComponent.setAutoDraw(False)
     trials.addData('polygon_5.started', polygon_5.tStartRefresh)
     trials.addData('polygon_5.stopped', polygon_5.tStopRefresh)
-    if key_resp.keys == 'right' and skip2 == False:
+    trials.addData('text_6.started', text_6.tStartRefresh)
+    trials.addData('text_6.stopped', text_6.tStopRefresh)
+    if key_resp_2.keys == 'right' and skip2 == False:
         cor2 = 1
-    elif key_resp.keys == 'left' and skip2 == True:
+    elif key_resp_2.keys == 'left' and skip2 == True:
         cor2 = 1
     else: 
         cor2 = 0
         
     
     trials.addData("cor2", cor2)
-    trials.addData('option1_t2.started', option1_t2.tStartRefresh)
-    trials.addData('option1_t2.stopped', option1_t2.tStopRefresh)
     # check responses
     if key_resp_2.keys in ['', [], None]:  # No response was made
         key_resp_2.keys = None
@@ -1275,7 +1252,7 @@ for thisTrials2 in trials2:
         for paramName in thisTrials2:
             exec('{} = thisTrials2[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "optionsMain"-------
+    # ------Prepare to start Routine "optionsMain_2"-------
     continueRoutine = True
     routineTimer.add(3.000000)
     # update component parameters for each repeat
@@ -1283,7 +1260,7 @@ for thisTrials2 in trials2:
     curSet = np.random.choice(picFiles,17, False)
     shuffle(curSet)
     for kk in range(0,17):
-        trials2.addData('img'+str(kk), curSet[kk])
+        trials.addData('img'+str(kk), curSet[kk])
     
     ii = 0
     curImage = folder + curSet[ii]
@@ -1296,11 +1273,10 @@ for thisTrials2 in trials2:
     opt2 = options[1]
     #opt3 = options[2]
     #opt4 = options[3]
-    option1_2.setImage(opt1)
-    option2_2.setImage(opt2)
+    option1_3.setImage(opt1)
     # keep track of which components have finished
-    optionsMainComponents = [option1_2, option2_2, text_5]
-    for thisComponent in optionsMainComponents:
+    optionsMain_2Components = [option1_3, text_7]
+    for thisComponent in optionsMain_2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1310,68 +1286,51 @@ for thisTrials2 in trials2:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    optionsMainClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    optionsMain_2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "optionsMain"-------
+    # -------Run Routine "optionsMain_2"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = optionsMainClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=optionsMainClock)
+        t = optionsMain_2Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=optionsMain_2Clock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *option1_2* updates
-        if option1_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *option1_3* updates
+        if option1_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            option1_2.frameNStart = frameN  # exact frame index
-            option1_2.tStart = t  # local t and not account for scr refresh
-            option1_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(option1_2, 'tStartRefresh')  # time at next scr refresh
-            option1_2.setAutoDraw(True)
-        if option1_2.status == STARTED:
+            option1_3.frameNStart = frameN  # exact frame index
+            option1_3.tStart = t  # local t and not account for scr refresh
+            option1_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(option1_3, 'tStartRefresh')  # time at next scr refresh
+            option1_3.setAutoDraw(True)
+        if option1_3.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > option1_2.tStartRefresh + 2.75-frameTolerance:
+            if tThisFlipGlobal > option1_3.tStartRefresh + 2.75-frameTolerance:
                 # keep track of stop time/frame for later
-                option1_2.tStop = t  # not accounting for scr refresh
-                option1_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(option1_2, 'tStopRefresh')  # time at next scr refresh
-                option1_2.setAutoDraw(False)
+                option1_3.tStop = t  # not accounting for scr refresh
+                option1_3.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(option1_3, 'tStopRefresh')  # time at next scr refresh
+                option1_3.setAutoDraw(False)
         
-        # *option2_2* updates
-        if option2_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *text_7* updates
+        if text_7.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
             # keep track of start time/frame for later
-            option2_2.frameNStart = frameN  # exact frame index
-            option2_2.tStart = t  # local t and not account for scr refresh
-            option2_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(option2_2, 'tStartRefresh')  # time at next scr refresh
-            option2_2.setAutoDraw(True)
-        if option2_2.status == STARTED:
+            text_7.frameNStart = frameN  # exact frame index
+            text_7.tStart = t  # local t and not account for scr refresh
+            text_7.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_7, 'tStartRefresh')  # time at next scr refresh
+            text_7.setAutoDraw(True)
+        if text_7.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > option2_2.tStartRefresh + 2.75-frameTolerance:
+            if tThisFlipGlobal > text_7.tStartRefresh + .5-frameTolerance:
                 # keep track of stop time/frame for later
-                option2_2.tStop = t  # not accounting for scr refresh
-                option2_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(option2_2, 'tStopRefresh')  # time at next scr refresh
-                option2_2.setAutoDraw(False)
-        
-        # *text_5* updates
-        if text_5.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
-            # keep track of start time/frame for later
-            text_5.frameNStart = frameN  # exact frame index
-            text_5.tStart = t  # local t and not account for scr refresh
-            text_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
-            text_5.setAutoDraw(True)
-        if text_5.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_5.tStartRefresh + .5-frameTolerance:
-                # keep track of stop time/frame for later
-                text_5.tStop = t  # not accounting for scr refresh
-                text_5.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_5, 'tStopRefresh')  # time at next scr refresh
-                text_5.setAutoDraw(False)
+                text_7.tStop = t  # not accounting for scr refresh
+                text_7.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_7, 'tStopRefresh')  # time at next scr refresh
+                text_7.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1381,7 +1340,7 @@ for thisTrials2 in trials2:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in optionsMainComponents:
+        for thisComponent in optionsMain_2Components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1390,18 +1349,16 @@ for thisTrials2 in trials2:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "optionsMain"-------
-    for thisComponent in optionsMainComponents:
+    # -------Ending Routine "optionsMain_2"-------
+    for thisComponent in optionsMain_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('option1_2.started', option1_2.tStartRefresh)
-    thisExp.addData('option1_2.stopped', option1_2.tStopRefresh)
-    thisExp.addData('option2_2.started', option2_2.tStartRefresh)
-    thisExp.addData('option2_2.stopped', option2_2.tStopRefresh)
-    thisExp.addData('text_5.started', text_5.tStartRefresh)
-    thisExp.addData('text_5.stopped', text_5.tStopRefresh)
+    thisExp.addData('option1_3.started', option1_3.tStartRefresh)
+    thisExp.addData('option1_3.stopped', option1_3.tStopRefresh)
+    thisExp.addData('text_7.started', text_7.tStartRefresh)
+    thisExp.addData('text_7.stopped', text_7.tStopRefresh)
     
-    # ------Prepare to start Routine "trialMain2"-------
+    # ------Prepare to start Routine "trial_2"-------
     continueRoutine = True
     # update component parameters for each repeat
     curImage = folder + curSet[0]
@@ -1411,8 +1368,8 @@ for thisTrials2 in trials2:
     
     trialClock.reset()
     # keep track of which components have finished
-    trialMain2Components = [displayPicture_3, polygon_13]
-    for thisComponent in trialMain2Components:
+    trial_2Components = [displayPicture_4, polygon_16]
+    for thisComponent in trial_2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1422,14 +1379,14 @@ for thisTrials2 in trials2:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    trialMain2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    trial_2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "trialMain2"-------
+    # -------Run Routine "trial_2"-------
     while continueRoutine:
         # get current time
-        t = trialMain2Clock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=trialMain2Clock)
+        t = trial_2Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=trial_2Clock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1445,8 +1402,6 @@ for thisTrials2 in trials2:
                 checkForOn = True
         else: #the mask is up right now, check for new image
             if t>onSets[ii]:
-                
-                trials2.addData('t' + str(ii), t)
                 print(str(t) + "onSet!")
                 curOpacity2 = 0
                 checkForOff = True
@@ -1470,6 +1425,7 @@ for thisTrials2 in trials2:
                             skip1 = False
                         curOpacity = 1
                     elif T2_loc-1==ii:
+                        curImage = "X_target.jpg"
                         if random.random()<skipProb: #skip target 2
                             curImage = folder + curSet[16]      
                             trials2.addData('skip2', 1)
@@ -1487,28 +1443,28 @@ for thisTrials2 in trials2:
         
         
         
-        # *displayPicture_3* updates
-        if displayPicture_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *displayPicture_4* updates
+        if displayPicture_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            displayPicture_3.frameNStart = frameN  # exact frame index
-            displayPicture_3.tStart = t  # local t and not account for scr refresh
-            displayPicture_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(displayPicture_3, 'tStartRefresh')  # time at next scr refresh
-            displayPicture_3.setAutoDraw(True)
-        if displayPicture_3.status == STARTED:  # only update if drawing
-            displayPicture_3.setImage(curImage)
+            displayPicture_4.frameNStart = frameN  # exact frame index
+            displayPicture_4.tStart = t  # local t and not account for scr refresh
+            displayPicture_4.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(displayPicture_4, 'tStartRefresh')  # time at next scr refresh
+            displayPicture_4.setAutoDraw(True)
+        if displayPicture_4.status == STARTED:  # only update if drawing
+            displayPicture_4.setImage(curImage)
         
-        # *polygon_13* updates
-        if polygon_13.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_16* updates
+        if polygon_16.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            polygon_13.frameNStart = frameN  # exact frame index
-            polygon_13.tStart = t  # local t and not account for scr refresh
-            polygon_13.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon_13, 'tStartRefresh')  # time at next scr refresh
-            polygon_13.setAutoDraw(True)
-        if polygon_13.status == STARTED:  # only update if drawing
-            polygon_13.setOpacity(curOpacity2)
-            polygon_13.setFillColor([1,1,1])
+            polygon_16.frameNStart = frameN  # exact frame index
+            polygon_16.tStart = t  # local t and not account for scr refresh
+            polygon_16.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_16, 'tStartRefresh')  # time at next scr refresh
+            polygon_16.setAutoDraw(True)
+        if polygon_16.status == STARTED:  # only update if drawing
+            polygon_16.setOpacity(curOpacity2)
+            polygon_16.setFillColor([1,1,1])
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1518,7 +1474,7 @@ for thisTrials2 in trials2:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in trialMain2Components:
+        for thisComponent in trial_2Components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1527,15 +1483,15 @@ for thisTrials2 in trials2:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "trialMain2"-------
-    for thisComponent in trialMain2Components:
+    # -------Ending Routine "trial_2"-------
+    for thisComponent in trial_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('displayPicture_3.started', displayPicture_3.tStartRefresh)
-    thisExp.addData('displayPicture_3.stopped', displayPicture_3.tStopRefresh)
-    thisExp.addData('polygon_13.started', polygon_13.tStartRefresh)
-    thisExp.addData('polygon_13.stopped', polygon_13.tStopRefresh)
-    # the Routine "trialMain2" was not non-slip safe, so reset the non-slip timer
+    thisExp.addData('displayPicture_4.started', displayPicture_4.tStartRefresh)
+    thisExp.addData('displayPicture_4.stopped', displayPicture_4.tStopRefresh)
+    thisExp.addData('polygon_16.started', polygon_16.tStartRefresh)
+    thisExp.addData('polygon_16.stopped', polygon_16.tStopRefresh)
+    # the Routine "trial_2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # ------Prepare to start Routine "response1Main"-------
@@ -1635,32 +1591,31 @@ for thisTrials2 in trials2:
     for thisComponent in response1MainComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('polygon_7.started', polygon_7.tStartRefresh)
-    thisExp.addData('polygon_7.stopped', polygon_7.tStopRefresh)
-    if key_resp_2.keys == 'right' and skip1 == False:
+    trials2.addData('polygon_7.started', polygon_7.tStartRefresh)
+    trials2.addData('polygon_7.stopped', polygon_7.tStopRefresh)
+    if key_resp_6.keys == 'right' and skip1 == False:
         cor1 = 1
-    elif key_resp_2.keys == 'left' and skip1 == True:
+    elif key_resp_6.keys == 'left' and skip1 == True:
         cor1 = 1
     else: 
         cor1 = 0
         
     
     trials2.addData("cor1", cor1)
-    thisExp.addData('option1_t1_2.started', option1_t1_2.tStartRefresh)
-    thisExp.addData('option1_t1_2.stopped', option1_t1_2.tStopRefresh)
+    trials2.addData('option1_t1_2.started', option1_t1_2.tStartRefresh)
+    trials2.addData('option1_t1_2.stopped', option1_t1_2.tStopRefresh)
     # check responses
     if key_resp_6.keys in ['', [], None]:  # No response was made
         key_resp_6.keys = None
-    thisExp.addData('key_resp_6.keys',key_resp_6.keys)
+    trials2.addData('key_resp_6.keys',key_resp_6.keys)
     if key_resp_6.keys != None:  # we had a response
-        thisExp.addData('key_resp_6.rt', key_resp_6.rt)
-    thisExp.addData('key_resp_6.started', key_resp_6.tStartRefresh)
-    thisExp.addData('key_resp_6.stopped', key_resp_6.tStopRefresh)
-    thisExp.nextEntry()
+        trials2.addData('key_resp_6.rt', key_resp_6.rt)
+    trials2.addData('key_resp_6.started', key_resp_6.tStartRefresh)
+    trials2.addData('key_resp_6.stopped', key_resp_6.tStopRefresh)
     # the Routine "response1Main" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # ------Prepare to start Routine "response2Main"-------
+    # ------Prepare to start Routine "response2_2"-------
     continueRoutine = True
     # update component parameters for each repeat
     options = [folder + curSet[T2_loc-1]]
@@ -1669,13 +1624,12 @@ for thisTrials2 in trials2:
     
     trials2.addData('opt1_t1', opt1)
     
-    option1_t2_2.setImage(opt1)
-    key_resp_5.keys = []
-    key_resp_5.rt = []
-    _key_resp_5_allKeys = []
+    key_resp_8.keys = []
+    key_resp_8.rt = []
+    _key_resp_8_allKeys = []
     # keep track of which components have finished
-    response2MainComponents = [polygon_6, option1_t2_2, key_resp_5]
-    for thisComponent in response2MainComponents:
+    response2_2Components = [polygon_17, text_8, key_resp_8]
+    for thisComponent in response2_2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1685,55 +1639,55 @@ for thisTrials2 in trials2:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    response2MainClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    response2_2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "response2Main"-------
+    # -------Run Routine "response2_2"-------
     while continueRoutine:
         # get current time
-        t = response2MainClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=response2MainClock)
+        t = response2_2Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=response2_2Clock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *polygon_6* updates
-        if polygon_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_17* updates
+        if polygon_17.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            polygon_6.frameNStart = frameN  # exact frame index
-            polygon_6.tStart = t  # local t and not account for scr refresh
-            polygon_6.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon_6, 'tStartRefresh')  # time at next scr refresh
-            polygon_6.setAutoDraw(True)
+            polygon_17.frameNStart = frameN  # exact frame index
+            polygon_17.tStart = t  # local t and not account for scr refresh
+            polygon_17.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_17, 'tStartRefresh')  # time at next scr refresh
+            polygon_17.setAutoDraw(True)
         
-        # *option1_t2_2* updates
-        if option1_t2_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *text_8* updates
+        if text_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            option1_t2_2.frameNStart = frameN  # exact frame index
-            option1_t2_2.tStart = t  # local t and not account for scr refresh
-            option1_t2_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(option1_t2_2, 'tStartRefresh')  # time at next scr refresh
-            option1_t2_2.setAutoDraw(True)
+            text_8.frameNStart = frameN  # exact frame index
+            text_8.tStart = t  # local t and not account for scr refresh
+            text_8.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
+            text_8.setAutoDraw(True)
         
-        # *key_resp_5* updates
+        # *key_resp_8* updates
         waitOnFlip = False
-        if key_resp_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if key_resp_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            key_resp_5.frameNStart = frameN  # exact frame index
-            key_resp_5.tStart = t  # local t and not account for scr refresh
-            key_resp_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_5, 'tStartRefresh')  # time at next scr refresh
-            key_resp_5.status = STARTED
+            key_resp_8.frameNStart = frameN  # exact frame index
+            key_resp_8.tStart = t  # local t and not account for scr refresh
+            key_resp_8.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_8, 'tStartRefresh')  # time at next scr refresh
+            key_resp_8.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(key_resp_5.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_5.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_5.getKeys(keyList=['left', 'right', 'up', 'down'], waitRelease=False)
-            _key_resp_5_allKeys.extend(theseKeys)
-            if len(_key_resp_5_allKeys):
-                key_resp_5.keys = _key_resp_5_allKeys[-1].name  # just the last key pressed
-                key_resp_5.rt = _key_resp_5_allKeys[-1].rt
+            win.callOnFlip(key_resp_8.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_8.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_8.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_8.getKeys(keyList=['left', 'right', 'up', 'down'], waitRelease=False)
+            _key_resp_8_allKeys.extend(theseKeys)
+            if len(_key_resp_8_allKeys):
+                key_resp_8.keys = _key_resp_8_allKeys[-1].name  # just the last key pressed
+                key_resp_8.rt = _key_resp_8_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
         
@@ -1745,7 +1699,7 @@ for thisTrials2 in trials2:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in response2MainComponents:
+        for thisComponent in response2_2Components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1754,12 +1708,14 @@ for thisTrials2 in trials2:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "response2Main"-------
-    for thisComponent in response2MainComponents:
+    # -------Ending Routine "response2_2"-------
+    for thisComponent in response2_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('polygon_6.started', polygon_6.tStartRefresh)
-    thisExp.addData('polygon_6.stopped', polygon_6.tStopRefresh)
+    thisExp.addData('polygon_17.started', polygon_17.tStartRefresh)
+    thisExp.addData('polygon_17.stopped', polygon_17.tStopRefresh)
+    thisExp.addData('text_8.started', text_8.tStartRefresh)
+    thisExp.addData('text_8.stopped', text_8.tStopRefresh)
     if key_resp_2.keys == 'right' and skip2 == False:
         cor2 = 1
     elif key_resp_2.keys == 'left' and skip2 == True:
@@ -1768,19 +1724,17 @@ for thisTrials2 in trials2:
         cor2 = 0
         
     
-    trials2.addData("cor2", cor2)
-    thisExp.addData('option1_t2_2.started', option1_t2_2.tStartRefresh)
-    thisExp.addData('option1_t2_2.stopped', option1_t2_2.tStopRefresh)
+    trials.addData("cor2", cor2)
     # check responses
-    if key_resp_5.keys in ['', [], None]:  # No response was made
-        key_resp_5.keys = None
-    thisExp.addData('key_resp_5.keys',key_resp_5.keys)
-    if key_resp_5.keys != None:  # we had a response
-        thisExp.addData('key_resp_5.rt', key_resp_5.rt)
-    thisExp.addData('key_resp_5.started', key_resp_5.tStartRefresh)
-    thisExp.addData('key_resp_5.stopped', key_resp_5.tStopRefresh)
+    if key_resp_8.keys in ['', [], None]:  # No response was made
+        key_resp_8.keys = None
+    thisExp.addData('key_resp_8.keys',key_resp_8.keys)
+    if key_resp_8.keys != None:  # we had a response
+        thisExp.addData('key_resp_8.rt', key_resp_8.rt)
+    thisExp.addData('key_resp_8.started', key_resp_8.tStartRefresh)
+    thisExp.addData('key_resp_8.stopped', key_resp_8.tStopRefresh)
     thisExp.nextEntry()
-    # the Routine "response2Main" was not non-slip safe, so reset the non-slip timer
+    # the Routine "response2_2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # ------Prepare to start Routine "break_2"-------
