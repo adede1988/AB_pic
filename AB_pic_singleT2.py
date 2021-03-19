@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on March 18, 2021, at 14:48
+    on March 19, 2021, at 12:44
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -83,7 +83,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instructions"
 instructionsClock = core.Clock()
 text_3 = visual.TextStim(win=win, name='text_3',
-    text='In this task you will be focusing on the computer screen and attempting to perceive images that appear very briefly. Each image will depict a single everyday object. On each trial of the task, you will first be presented with two images for 3 seconds. You should try to hold these images in mind. Then, a + will appear in the middle of the computer screen. Focus your gaze on the +. A series of images will be presented quickly, one at a time, in the middle of the screen. After the rapid presentation, you will see each of the two original images again. For each of them, please indicate if you saw the image in the rapid presentation. Press the right arrow key to indicate “I saw this image”, and the left arrow key to indicate “I did not see this image”. You will have a block of training trials. For these trials, you will get feedback about whether you are right or wrong at the end of each trial. \n\nPress the SPACEBAR to begin the training trials',
+    text='In this task you will be focusing on the computer screen and attempting to perceive images that appear very briefly. Each image will depict a single everyday object. On each trial of the task, you will first be presented with an image for 3 seconds. You should try to hold this image in mind. Then, a + will appear in the middle of the computer screen. Focus your gaze on the +. A series of images will be presented quickly, one at a time, in the middle of the screen. After the rapid presentation, you will see the original image again. Please indicate if you saw the image in the rapid presentation. Press the right arrow key to indicate “I saw this image”, and the left arrow key to indicate “I did not see this image”. In addition, you should always be on the lookout for a picture of a blender. At the end of each trial, you will be asked if you saw the blender. You will have several training trials. For these trials, you will get feedback about whether you are right or wrong at the end of each trial. \n\nPress the SPACEBAR to begin the training trials',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -91,7 +91,7 @@ text_3 = visual.TextStim(win=win, name='text_3',
     depth=0.0);
 key_resp_4 = keyboard.Keyboard()
 import random
-from sklearn.linear_model import LogisticRegression
+#from sklearn.linear_model import LogisticRegression
  
 
 folder = '.\\resources\\'
@@ -182,7 +182,7 @@ polygon_5 = visual.ShapeStim(
     fillColor=[0,0,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 text_6 = visual.TextStim(win=win, name='text_6',
-    text='Did you see an X? ',
+    text='Did you see a blender? ',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -308,7 +308,7 @@ polygon_17 = visual.ShapeStim(
     fillColor=[0,0,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 text_8 = visual.TextStim(win=win, name='text_8',
-    text='Did you see an X? ',
+    text='Did you see a blender? ',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -1146,6 +1146,7 @@ _key_resp_7_allKeys = []
 correctRecord = []
 curStimTim = .1
 stimTimRec = []
+params = np.array([0,0])
 # keep track of which components have finished
 mainInstructionsComponents = [text_4, key_resp_7]
 for thisComponent in mainInstructionsComponents:
@@ -1396,9 +1397,9 @@ for thisTrials2 in trials2:
         t = trialClock.getTime()
         if phase == "ramp":
             curStimTim = stimLen
-        
-        onSets = np.linspace(stimLen+isi, (stimLen+isi)*15, 15)
-        offSets = np.linspace(stimLen, (stimLen+isi)*15 - isi, 15)
+        trials2.addData('curStimTim', curStimTim)
+        onSets = np.linspace(curStimTim+isi, (curStimTim+isi)*15, 15)
+        offSets = np.linspace(curStimTim, (curStimTim+isi)*15 - isi, 15)
         if checkForOff: #there's an image on screen and we need to know to take it off
             if t>offSets[ii]:
                 print(str(t) + "offset!")
@@ -1611,13 +1612,44 @@ for thisTrials2 in trials2:
     trials2.addData("cor1", cor1)
     
     correctRecord.append(cor1)
+    correctRecord.append(0)
+    correctRecord.append(1)
     stimTimRec.append(curStimTim)
+    stimTimRec.append(0)
+    stimTimRec.append(.2)
     #model = LogisticRegression(solver='liblinear', random_state=0).fit(curStimTim, correctRecord)
+    if len(correctRecord)>5:
+        
+        y = np.array(correctRecord)
+        x = np.reshape(np.array(stimTimRec), (-1,1))
+       # params = np.array(params)
+        
+        
+        if len(x[:,0]) < len(x[0,:]):
+            x = x.T
+            
+        X = np.hstack((np.ones((len(x),1)),x))
+        print(X)
+        print(params)
+        iterations = 1500
+        learning_rate = .03
     
-    #B1 = model.coef_[0][0]
-    #B0 = model.intercept_[0]
+        m = len(stimTimRec)
+        
+        for i in range(iterations):
+            params = params - (learning_rate/m) * (X.T @ ((1/(1+np.exp(-(X[:,0]*params[0] + X[:,1]*params[1])))) - y)) 
+            
+        if np.isnan(params[0]):
+            params[0] = -1
+            params[1] = 4
     
-    curStimTim = .2 #-((np.log(1/.90 - 1) + B0) / B1
+        B1 = params[1]
+        B0 = params[0]
+        trials2.addData("B0", B0)
+        trials2.addData("B1", B1)
+    
+        curStimTim = -((np.log(1/.80 - 1) + B0) / B1)
+        curStimTim = curStimTim
     
     
     
