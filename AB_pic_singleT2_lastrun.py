@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on March 19, 2021, at 11:17
+    on March 19, 2021, at 11:30
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1398,8 +1398,8 @@ for thisTrials2 in trials2:
         if phase == "ramp":
             curStimTim = stimLen
         trials2.addData('curStimTim', curStimTim)
-        onSets = np.linspace(stimLen+isi, (stimLen+isi)*15, 15)
-        offSets = np.linspace(stimLen, (stimLen+isi)*15 - isi, 15)
+        onSets = np.linspace(curStimTim+isi, (curStimTim+isi)*15, 15)
+        offSets = np.linspace(curStimTim, (curStimTim+isi)*15 - isi, 15)
         if checkForOff: #there's an image on screen and we need to know to take it off
             if t>offSets[ii]:
                 print(str(t) + "offset!")
