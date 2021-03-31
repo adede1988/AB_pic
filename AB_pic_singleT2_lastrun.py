@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on March 31, 2021, at 14:39
+This experiment was created using PsychoPy3 Experiment Builder (v2021.1.2),
+    on มีนาคม 31, 2021, at 14:56
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,14 +15,14 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock
+from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
-from numpy.random import random, randint, normal, shuffle
+from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2020.2.10'
+psychopyVersion = '2021.1.2'
 expName = 'AB_pic_singleT2'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -158,8 +158,7 @@ polygon_2 = visual.Rect(
     win=win, name='polygon_2',
     width=(0.25, 0.25)[0], height=(0.25, 0.25)[1],
     ori=0, pos=(0, 0),
-    lineWidth=0, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=1.0, fillColorSpace='rgb',
+    lineWidth=0,     colorSpace='rgb',  lineColor=[1,1,1], fillColor='white',
     opacity=1.0, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "response1"
@@ -168,8 +167,7 @@ polygon_4 = visual.ShapeStim(
     win=win, name='polygon_4',
     vertices=[[-(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [+(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [0,(0.8, 0.8)[1]/2.0]],
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,0,0], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,0,0],
     opacity=1, depth=0.0, interpolate=True)
 option1_t1 = visual.ImageStim(
     win=win,
@@ -187,8 +185,7 @@ polygon_5 = visual.ShapeStim(
     win=win, name='polygon_5', vertices='star7',
     size=(0.7, 0.7),
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[0,0,1], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[0,0,1],
     opacity=1, depth=0.0, interpolate=True)
 key_resp_2 = keyboard.Keyboard()
 textbox_2 = visual.TextBox2(
@@ -211,7 +208,7 @@ textbox_2 = visual.TextBox2(
 # Initialize components for Routine "feedback"
 feedbackClock = core.Clock()
 textbox_3 = visual.TextBox2(
-     win, text='default text', font='Browallia New',
+     win, text='', font='Browallia New',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='white', colorSpace='rgb',
@@ -237,7 +234,7 @@ breakTime = .1
 breakTimeContainer = []
 key_resp_3 = keyboard.Keyboard()
 textbox_6 = visual.TextBox2(
-     win, text='default text', font='Browallia New',
+     win, text='', font='Browallia New',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='white', colorSpace='rgb',
@@ -320,8 +317,7 @@ polygon_16 = visual.Rect(
     win=win, name='polygon_16',
     width=(0.25, 0.25)[0], height=(0.25, 0.25)[1],
     ori=0, pos=(0, 0),
-    lineWidth=0, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=1.0, fillColorSpace='rgb',
+    lineWidth=0,     colorSpace='rgb',  lineColor=[1,1,1], fillColor='white',
     opacity=1.0, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "response1Main"
@@ -330,8 +326,7 @@ polygon_7 = visual.ShapeStim(
     win=win, name='polygon_7',
     vertices=[[-(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [+(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [0,(0.8, 0.8)[1]/2.0]],
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,0,0], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,0,0],
     opacity=1, depth=0.0, interpolate=True)
 option1_t1_2 = visual.ImageStim(
     win=win,
@@ -349,8 +344,7 @@ polygon_17 = visual.ShapeStim(
     win=win, name='polygon_17', vertices='star7',
     size=(0.7, 0.7),
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[0,0,1], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[0,0,1],
     opacity=1, depth=0.0, interpolate=True)
 key_resp_8 = keyboard.Keyboard()
 textbox_5 = visual.TextBox2(
@@ -380,7 +374,7 @@ breakTime = .1
 breakTimeContainer = []
 key_resp_3 = keyboard.Keyboard()
 textbox_6 = visual.TextBox2(
-     win, text='default text', font='Browallia New',
+     win, text='', font='Browallia New',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='white', colorSpace='rgb',
@@ -724,8 +718,8 @@ for thisTrial in trials:
             win.timeOnFlip(polygon_2, 'tStartRefresh')  # time at next scr refresh
             polygon_2.setAutoDraw(True)
         if polygon_2.status == STARTED:  # only update if drawing
-            polygon_2.setOpacity(curOpacity2)
             polygon_2.setFillColor([1,1,1])
+            polygon_2.setOpacity(curOpacity2)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1012,8 +1006,7 @@ for thisTrial in trials:
     
     
     feedback = snip1
-    textbox_3.setText(
-feedback)
+    textbox_3.setText(feedback)
     # keep track of which components have finished
     feedbackComponents = [textbox_3]
     for thisComponent in feedbackComponents:
@@ -1083,7 +1076,7 @@ feedback)
     continueRoutine = True
     # update component parameters for each repeat
     try:
-        cur = [2,116,174].index(trials2.thisTrialN) 
+        cur = [58,116,174].index(trials2.thisTrialN) 
         breakTime = 10000
         if cur==0:
             breakText = "\n    พักสักครู่ ตอนนี้ผ่านการทดลองมาแล้ว 25% กด Spacebar เพื่อเริ่มต้นใหม่ หากท่านพร้อมแล้ว"
@@ -1097,8 +1090,7 @@ feedback)
     key_resp_3.keys = []
     key_resp_3.rt = []
     _key_resp_3_allKeys = []
-    textbox_6.setText(
-breakText)
+    textbox_6.setText(breakText)
     # keep track of which components have finished
     break_2Components = [key_resp_3, textbox_6]
     for thisComponent in break_2Components:
@@ -1527,8 +1519,8 @@ for thisTrials2 in trials2:
             win.timeOnFlip(polygon_16, 'tStartRefresh')  # time at next scr refresh
             polygon_16.setAutoDraw(True)
         if polygon_16.status == STARTED:  # only update if drawing
-            polygon_16.setOpacity(curOpacity2)
             polygon_16.setFillColor([1,1,1])
+            polygon_16.setOpacity(curOpacity2)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1848,7 +1840,7 @@ for thisTrials2 in trials2:
     continueRoutine = True
     # update component parameters for each repeat
     try:
-        cur = [2,116,174].index(trials2.thisTrialN) 
+        cur = [58,116,174].index(trials2.thisTrialN) 
         breakTime = 10000
         if cur==0:
             breakText = "\n    พักสักครู่ ตอนนี้ผ่านการทดลองมาแล้ว 25% กด Spacebar เพื่อเริ่มต้นใหม่ หากท่านพร้อมแล้ว"
@@ -1862,8 +1854,7 @@ for thisTrials2 in trials2:
     key_resp_3.keys = []
     key_resp_3.rt = []
     _key_resp_3_allKeys = []
-    textbox_6.setText(
-breakText)
+    textbox_6.setText(breakText)
     # keep track of which components have finished
     break_2Components = [key_resp_3, textbox_6]
     for thisComponent in break_2Components:
