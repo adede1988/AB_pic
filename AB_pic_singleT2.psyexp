@@ -459,7 +459,7 @@
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
@@ -476,7 +476,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Did you see a blender? " valType="extendedStr"/>
+        <Param name="text" updates="constant" val="&amp;#10;test" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -593,6 +593,41 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+      <TextboxComponent name="textbox_2">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
+        <Param name="borderWidth" updates="constant" val="2" valType="num"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val="1.0" valType="num"/>
+        <Param name="name" updates="None" val="textbox_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="                            ท่านเห็นเครื่องปั่นหรือไม่ " valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </TextboxComponent>
     </Routine>
     <Routine name="break_2">
       <VariableComponent name="breakText">
@@ -640,9 +675,9 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="try {&amp;#10;    cur = [58, 116, 174].index(trials2.thisTrialN);&amp;#10;    breakTime = 10000;&amp;#10;    if ((cur === 0)) {&amp;#10;        breakText = &quot;Take a break! you are 25% of the way through. Press SPACEBAR when you're ready to continue.&quot;;&amp;#10;    } else {&amp;#10;        if ((cur === 1)) {&amp;#10;            breakText = &quot;Take a break! you are 50% of the way through. Press SPACEBAR when you're ready to continue.&quot;;&amp;#10;        } else {&amp;#10;            breakText = &quot;Take a break! you are 75% of the way through. Press SPACEBAR when you're ready to continue.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;} catch(e) {&amp;#10;    breakTime = 0.01;&amp;#10;    breakText = &quot;&quot;;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="try:&amp;#10;    cur = [58,116,174].index(trials2.thisTrialN) &amp;#10;    breakTime = 10000&amp;#10;    if cur==0:&amp;#10;        breakText = &quot;Take a break! you are 25% of the way through. Press SPACEBAR when you're ready to continue.&quot;&amp;#10;    elif cur==1:&amp;#10;        breakText = &quot;Take a break! you are 50% of the way through. Press SPACEBAR when you're ready to continue.&quot;&amp;#10;    else:&amp;#10;        breakText = &quot;Take a break! you are 75% of the way through. Press SPACEBAR when you're ready to continue.&quot;&amp;#10;except: &amp;#10;    breakTime = .01&amp;#10;    breakText = &quot;&quot;" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Begin JS Routine" updates="constant" val="try {&amp;#10;    cur = [58, 116, 174].index(trials2.thisTrialN);&amp;#10;    breakTime = 10000;&amp;#10;    if ((cur === 0)) {&amp;#10;        breakText = &quot;\n \u0e1e\u0e31\u0e01\u0e2a\u0e31\u0e01\u0e04\u0e23\u0e39\u0e48 \u0e15\u0e2d\u0e19\u0e19\u0e35\u0e49\u0e1c\u0e48\u0e32\u0e19\u0e01\u0e32\u0e23\u0e17\u0e14\u0e25\u0e2d\u0e07\u0e21\u0e32\u0e41\u0e25\u0e49\u0e27 25% \u0e01\u0e14 Spacebar \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19\u0e43\u0e2b\u0e21\u0e48 \u0e2b\u0e32\u0e01\u0e17\u0e48\u0e32\u0e19\u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e41\u0e25\u0e49\u0e27&quot;;&amp;#10;    } else {&amp;#10;        if ((cur === 1)) {&amp;#10;            breakText = &quot;Take a break! you are 50% of the way through. Press SPACEBAR when you're ready to continue.&quot;;&amp;#10;        } else {&amp;#10;            breakText = &quot;Take a break! you are 75% of the way through. Press SPACEBAR when you're ready to continue.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;} catch(e) {&amp;#10;    breakTime = 0.01;&amp;#10;    breakText = &quot;&quot;;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="try:&amp;#10;    cur = [58,116,174].index(trials2.thisTrialN) &amp;#10;    breakTime = 10000&amp;#10;    if cur==0:&amp;#10;        breakText = &quot;\n    พักสักครู่ ตอนนี้ผ่านการทดลองมาแล้ว 25% กด Spacebar เพื่อเริ่มต้นใหม่ หากท่านพร้อมแล้ว&quot;&amp;#10;    elif cur==1:&amp;#10;        breakText = &quot;\n    พักสักครู่ ตอนนี้ผ่านการทดลองมาแล้ว 50% กด Spacebar เพื่อเริ่มต้นใหม่ หากท่านพร้อมแล้ว&quot;&amp;#10;    else:&amp;#10;        breakText = &quot;\n    พักสักครู่ ตอนนี้ผ่านการทดลองมาแล้ว 75% กด Spacebar เพื่อเริ่มต้นใหม่ หากท่านพร้อมแล้ว&quot;&amp;#10;except: &amp;#10;    breakTime = .01&amp;#10;    breakText = &quot;&quot;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="if breakTime&lt;1:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="if ((breakTime &lt; 1)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -656,7 +691,7 @@
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
@@ -695,6 +730,41 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+      <TextboxComponent name="textbox_6">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
+        <Param name="borderWidth" updates="constant" val="2" valType="num"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val="1.0" valType="num"/>
+        <Param name="name" updates="None" val="textbox_6" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="&amp;#10;$breakText" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </TextboxComponent>
     </Routine>
     <Routine name="feedback">
       <CodeComponent name="code_6">
@@ -702,8 +772,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if (((cor1 === 1) &amp;&amp; (cor2 === 1))) {&amp;#10;    snip1 = &quot;2/2 Correct&quot;;&amp;#10;}&amp;#10;if (((cor1 === 1) &amp;&amp; (cor2 === 0))) {&amp;#10;    snip1 = &quot;1/2 Correct&quot;;&amp;#10;}&amp;#10;if (((cor1 === 0) &amp;&amp; (cor2 === 1))) {&amp;#10;    snip1 = &quot;1/2 Correct&quot;;&amp;#10;}&amp;#10;if (((cor1 === 0) &amp;&amp; (cor2 === 0))) {&amp;#10;    snip1 = &quot;BOTH WRONG&quot;;&amp;#10;}&amp;#10;feedback = snip1;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if cor1 == 1 and cor2==1:&amp;#10;    snip1 = &quot;2/2 Correct&quot;&amp;#10;if cor1==1 and cor2==0: &amp;#10;    snip1 = &quot;1/2 Correct&quot;&amp;#10;if cor1==0 and cor2==1:&amp;#10;    snip1 = &quot;1/2 Correct&quot;&amp;#10;if cor1==0 and cor2==0:&amp;#10;    snip1 = &quot;BOTH WRONG&quot;&amp;#10;&amp;#10;&amp;#10;feedback = snip1" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((cor1 === 1) &amp;&amp; (cor2 === 1))) {&amp;#10;    snip1 = &quot;\n                           2/2 \u0e17\u0e33\u0e16\u0e39\u0e01&quot;;&amp;#10;}&amp;#10;if (((cor1 === 1) &amp;&amp; (cor2 === 0))) {&amp;#10;    snip1 = &quot;\n                            1/2 \u0e17\u0e33\u0e16\u0e39\u0e01&quot;;&amp;#10;}&amp;#10;if (((cor1 === 0) &amp;&amp; (cor2 === 1))) {&amp;#10;    snip1 = &quot;\n                            1/2 \u0e17\u0e33\u0e16\u0e39\u0e01&quot;;&amp;#10;}&amp;#10;if (((cor1 === 0) &amp;&amp; (cor2 === 0))) {&amp;#10;    snip1 = &quot;\n                            \u0e1c\u0e34\u0e14\u0e17\u0e31\u0e49\u0e07\u0e04\u0e39\u0e48 &quot;;&amp;#10;}&amp;#10;feedback = snip1;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if cor1 == 1 and cor2==1:&amp;#10;    snip1 = &quot;\n                           2/2 ทำถูก&quot;&amp;#10;if cor1==1 and cor2==0: &amp;#10;    snip1 = &quot;\n                            1/2 ทำถูก&quot;&amp;#10;if cor1==0 and cor2==1:&amp;#10;    snip1 = &quot;\n                            1/2 ทำถูก&quot;&amp;#10;if cor1==0 and cor2==0:&amp;#10;    snip1 = &quot;\n                            ผิดทั้งคู่ &quot;&amp;#10;&amp;#10;&amp;#10;feedback = snip1" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -718,7 +788,7 @@
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
@@ -739,16 +809,68 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
+      <TextboxComponent name="textbox_3">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
+        <Param name="borderWidth" updates="constant" val="2" valType="num"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val="1.0" valType="num"/>
+        <Param name="name" updates="None" val="textbox_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="&amp;#10;$feedback" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </TextboxComponent>
     </Routine>
     <Routine name="instructions">
+      <CodeComponent name="code_7">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;#from sklearn.linear_model import LogisticRegression&amp;#10; &amp;#10;&amp;#10;folder = '.\\resources\\'&amp;#10;picFiles = os.listdir(folder)&amp;#10;&amp;#10;#picFiles = np.random.choice(picFiles, 30, False)&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="/* Syntax Error: Fix Python code */" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_7" valType="code"/>
+      </CodeComponent>
       <TextComponent name="text_3">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
         <Param name="name" updates="None" val="text_3" valType="code"/>
@@ -762,7 +884,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="In this task you will be focusing on the computer screen and attempting to perceive images that appear very briefly. Each image will depict a single everyday object. On each trial of the task, you will first be presented with an image for 3 seconds. You should try to hold this image in mind. Then, a + will appear in the middle of the computer screen. Focus your gaze on the +. A series of images will be presented quickly, one at a time, in the middle of the screen. After the rapid presentation, you will see the original image again. Please indicate if you saw the image in the rapid presentation. Press the right arrow key to indicate “I saw this image”, and the left arrow key to indicate “I did not see this image”. In addition, you should always be on the lookout for a picture of a blender. At the end of each trial, you will be asked if you saw the blender. You will have several training trials. For these trials, you will get feedback about whether you are right or wrong at the end of each trial. &amp;#10;&amp;#10;Press the SPACEBAR to begin the training trials" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="ในขั้นตอนนี้ ขอให้ท่านตั้งใจมองภาพบนหน้าจอ โดยแต่ละครั้งจะแสดงภาพวัตถุเพียง 1 ชนิด ในเวลา 3 วินาที ขอให้ท่านคิดว่าเป็นภาพวัตถุชนิดใด เมื่อปรากฎเครื่องหมาย + บนหน้าจอ ให้จ้องเครื่องหมาย + ท่านจะเห็นภาพหลายภาพปรากฎขึ้นอย่างรวดเร็ว และจะวนกลับไปที่ภาพแรกเมื่อสิ้นสุดการนำเสนอ ให้กดลูกศรชี้ไปทางขวา “ถ้าท่านเห็นภาพที่คิดไว้” และกดลูกศรไปทางซ้าย “ถ้าท่านไม่เห็นภาพที่คิดไว้”  &amp;#10;นอกจากนี้ ท่านควรมองหารูปเครื่องปั่น โดยเมื่อสิ้นสุดการทดลองผู้วิจัยจะสอบถามเกี่ยวกับรูปเครื่องปั่นอีกครั้ง ทั้งนี้ท่านจะได้รับการฝึกซ้อมก่อนการทดลองจริง และในการทดลองนี้ท่านจะได้รับคำแนะนำเกี่ยวกับผลการทดลองว่าถูกหรือผิด &amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
       </TextComponent>
@@ -784,30 +906,48 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
-      <CodeComponent name="code_7">
-        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;#from sklearn.linear_model import LogisticRegression&amp;#10; &amp;#10;&amp;#10;folder = '.\\resources\\'&amp;#10;picFiles = os.listdir(folder)&amp;#10;&amp;#10;#picFiles = np.random.choice(picFiles, 30, False)&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="import * as random from 'random';&amp;#10;var folder, picFiles;&amp;#10;folder = &quot;.\\resources\\&quot;;&amp;#10;picFiles = os.listdir(folder);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+      <TextboxComponent name="textbox">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
+        <Param name="borderWidth" updates="constant" val="1" valType="num"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code_7" valType="code"/>
-      </CodeComponent>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val=".75" valType="num"/>
+        <Param name="name" updates="None" val="textbox" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="ในขั้นตอนนี้ ขอให้ท่านตั้งใจมองภาพบนหน้าจอ โดยแต่ละครั้งจะแสดงภาพวัตถุเพียง 1 ชนิด ในเวลา 3 วินาที ขอให้ท่านคิดว่าเป็นภาพวัตถุชนิดใด เมื่อปรากฎเครื่องหมาย + บนหน้าจอ ให้จ้องเครื่องหมาย + ท่านจะเห็นภาพหลายภาพปรากฎขึ้นอย่างรวดเร็ว และจะวนกลับไปที่ภาพแรกเมื่อสิ้นสุดการนำเสนอ ให้กดลูกศรชี้ไปทางขวา ‘ถ้าท่านเห็นภาพที่คิดไว้’ และกดลูกศรไปทางซ้าย ‘ถ้าท่านไม่เห็นภาพที่คิดไว้’  &amp;#10;นอกจากนี้ ท่านควรมองหารูปเครื่องปั่น โดยเมื่อสิ้นสุดการทดลองผู้วิจัยจะสอบถามเกี่ยวกับรูปเครื่องปั่นอีกครั้ง ทั้งนี้ท่านจะได้รับการฝึกซ้อมก่อนการทดลองจริง และในการทดลองนี้ท่านจะได้รับคำแนะนำเกี่ยวกับผลการทดลองว่าถูกหรือผิด กด Spacebar เพื่อเริ่มการฝึกใช้งาน " valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </TextboxComponent>
     </Routine>
     <Routine name="mainInstructions">
       <TextComponent name="text_4">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
@@ -824,7 +964,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Good job! You have completed the training trials. Now you will start the main task. The main task is the same as the training trials, except that now you will not get feedback after each trial if you are right or wrong. Also, the speed of presentation will increase. This will make the task harder, but don’t worry too much. Please just try to do your best to honestly report when you do and do not see the images. &amp;#10;&amp;#10;Press the SPACEBAR to begin the training trials. &amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="test" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
       </TextComponent>
@@ -863,6 +1003,41 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_16" valType="code"/>
       </CodeComponent>
+      <TextboxComponent name="textbox_4">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
+        <Param name="borderWidth" updates="constant" val="2" valType="num"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val=".75" valType="num"/>
+        <Param name="name" updates="None" val="textbox_4" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="ยอดเยี่ยม ! ท่านผ่านการฝึกใช้การแล้ว ต่อไปท่านจะเข้าสู่การทดลอง ซึ่งมีลักษณะเช่นเดียวกับที่ท่านได้ฝึกมาก่อนหน้านี้ ยกเว้นว่าในการทดลองนี้ท่านจะได้รับคำตอบว่าท่านตอบถูกหรือผิด ทั้งนี้การแสดงภาพในการหน้าจะจอจะเพิ่มความรวดเร็วขึ้น ซึ่งจะทำให้ท่านรู้สึกยากขึ้น ขอให้ท่านไม่ต้องกังวลใจ และทำการทดลองอย่างเต็มความสามารถ และเป็นความจริงที่สุด &amp;#10;&amp;#10;กด Spacebar" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </TextboxComponent>
     </Routine>
     <Routine name="options">
       <CodeComponent name="code_5">
@@ -2098,7 +2273,7 @@
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
@@ -2232,6 +2407,41 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+      <TextboxComponent name="textbox_5">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
+        <Param name="borderWidth" updates="constant" val="2" valType="num"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="Browallia New" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val="1.0" valType="num"/>
+        <Param name="name" updates="None" val="textbox_5" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="                            ท่านเห็นเครื่องปั่นหรือไม่ " valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </TextboxComponent>
     </Routine>
   </Routines>
   <Flow>
