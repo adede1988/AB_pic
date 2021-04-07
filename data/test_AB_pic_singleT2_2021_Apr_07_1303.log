@@ -1,0 +1,201 @@
+0.9328 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+2.6065 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\THSarabunIT๙ Bold.ttf
+2.6426 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\THSarabunIT๙.ttf
+2.6660 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\TH NiramitIT๙ Bold.ttf
+2.6727 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\THSarabunIT๙ Italic.ttf
+2.6856 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\TH Niramit AS-IT๙ Bold Italic.ttf
+2.6923 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\TH NiramitIT๙.ttf
+2.6927 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\THSarabunIT๙ BoldItalic.ttf
+2.7024 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\TH NiramitIT๙ Italic.ttf
+5.9824 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+7.8014 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000024D9CD30588>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000024D9CD88E48>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.8018 	EXP 	window1: mouseVisible = True
+7.8018 	EXP 	window1: recordFrameIntervals = False
+7.9677 	EXP 	window1: recordFrameIntervals = True
+8.1511 	EXP 	window1: recordFrameIntervals = False
+8.4140 	EXP 	Created option1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option1', opacity=1, ori=0.0, pos=array([0. , 0.3]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+8.5918 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+8.5967 	EXP 	Created displayPicture = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayPicture', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+8.5976 	EXP 	Created polygon_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=0, name='polygon_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), units='height', vertices=ndarray(...), win=Window(...))
+8.5990 	EXP 	Created polygon_4 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 0, 0]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='polygon_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.6057 	EXP 	Created option1_t1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option1_t1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+8.6072 	EXP 	Created polygon_5 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([0, 0, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='polygon_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.7, 0.7]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.6397 	EXP 	Created option1_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option1_3', opacity=1, ori=0.0, pos=array([0. , 0.3]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+8.6416 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_7', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+8.6520 	EXP 	Created displayPicture_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayPicture_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+8.6530 	EXP 	Created polygon_16 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=0, name='polygon_16', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), units='height', vertices=ndarray(...), win=Window(...))
+8.6541 	EXP 	Created polygon_7 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 0, 0]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='polygon_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.6600 	EXP 	Created option1_t1_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='option1_t1_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128, units='height', win=Window(...))
+8.6613 	EXP 	Created polygon_17 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([0, 0, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1, 1, 1]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1, name='polygon_17', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.7, 0.7]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.7467 	EXP 	textbox: autoLog = True
+8.7467 	EXP 	textbox_2: autoLog = True
+8.7467 	EXP 	textbox_3: autoLog = True
+8.7467 	EXP 	textbox_6: autoLog = True
+8.7467 	EXP 	textbox_4: autoLog = True
+8.7467 	EXP 	textbox_5: autoLog = True
+8.7467 	EXP 	textbox_6: autoLog = True
+8.7467 	EXP 	textbox: autoDraw = True
+10.1236 	DATA 	Keypress: space
+10.1472 	EXP 	Imported conditionAB.xlsx as conditions, 14 conditions, 8 params
+10.1476 	EXP 	Created sequence: random, trialTypes=14, nReps=1, seed=None
+10.1478 	EXP 	New trial (rep=0, index=0): {'trialType': 'AB', 'cndTyp': 'lag2', 'lag': 2, 'T1_loc': 5, 'T2_loc': 7, 'stimLen': 0.2, 'isi': 0.05, 'skipProb': 0.5}
+10.1842 	EXP 	textbox: autoDraw = False
+10.1842 	EXP 	option1: image = '.\\resources\\toolbox02.jpg'
+10.1842 	EXP 	option1: autoDraw = True
+12.6505 	EXP 	text_2: autoDraw = True
+12.9337 	EXP 	option1: autoDraw = False
+13.1671 	EXP 	text_2: autoDraw = False
+13.1671 	EXP 	option1: autoDraw = False
+13.1671 	EXP 	text_2: autoDraw = False
+13.1671 	EXP 	displayPicture: autoDraw = True
+13.1671 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.1671 	EXP 	polygon_2: autoDraw = True
+13.1838 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.2004 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.2171 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.2338 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.2504 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.2671 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.2838 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.3004 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.3171 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.3338 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.3504 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.3671 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.3838 	EXP 	displayPicture: image = '.\\resources\\anchor.jpg'
+13.4171 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.4338 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.4504 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.4671 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.4837 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.5004 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.5171 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.5337 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.5504 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.5671 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.5837 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.6004 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.6171 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.6337 	EXP 	displayPicture: image = '.\\resources\\ironingboard01.jpg'
+13.6671 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.6837 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.7004 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.7171 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.7337 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.7504 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.7671 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.7837 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.8004 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.8170 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.8337 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.8504 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.8671 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.8837 	EXP 	displayPicture: image = '.\\resources\\grizzly.jpg'
+13.9004 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+13.9171 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+13.9337 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+13.9504 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+13.9670 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+13.9837 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.0004 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.0170 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.0337 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.0504 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.0670 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.0837 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.1004 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.1170 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.1337 	EXP 	displayPicture: image = '.\\resources\\ladybug03.jpg'
+14.1504 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.1670 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.1837 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.2004 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.2171 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.2337 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.2503 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.2671 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.2837 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.3003 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.3170 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.3337 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.3503 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.3671 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.3837 	EXP 	displayPicture: image = '.\\resources\\makiroll.jpg'
+14.4170 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.4337 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.4503 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.4670 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.4837 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.5003 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.5170 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.5337 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.5503 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.5670 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.5837 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.6003 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.6170 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.6337 	EXP 	displayPicture: image = '.\\resources\\dromedary.jpg'
+14.6670 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.6837 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.7003 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.7170 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.7337 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.7503 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.7670 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.7837 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.8003 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.8170 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.8336 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.8503 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.8670 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.8836 	EXP 	displayPicture: image = '.\\resources\\arrow02.jpg'
+14.9170 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+14.9336 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+14.9503 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+14.9670 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+14.9836 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.0003 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.0170 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.0337 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.0503 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.0670 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.0837 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.1003 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.1170 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.1336 	EXP 	displayPicture: image = '.\\resources\\greywolf.jpg'
+15.1670 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.1836 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.2003 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.2170 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.2336 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.2503 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.2670 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.2836 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.3003 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.3169 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.3336 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.3503 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.3670 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.3836 	EXP 	displayPicture: image = '.\\resources\\flag.jpg'
+15.4170 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.4336 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.4503 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.4669 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.4836 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.5003 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.5170 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.5336 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.5503 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.5670 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.5836 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.6003 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.6170 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.6336 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.6669 	EXP 	displayPicture: image = '.\\resources\\funnel.jpg'
+15.6669 	EXP 	displayPicture: autoDraw = False
+15.6669 	EXP 	polygon_2: autoDraw = False
+15.6669 	EXP 	option1_t1: image = '.\\resources\\toolbox02.jpg'
+15.6669 	EXP 	polygon_4: autoDraw = True
+15.6669 	EXP 	option1_t1: autoDraw = True
+17.2396 	DATA 	Keypress: escape
+17.4558 	EXP 	window1: mouseVisible = True
