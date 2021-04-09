@@ -144,6 +144,15 @@ for ii in range(66):
 
 plt.scatter(X[:,1].T, correctRecord)
 
+weights = sqrt(np.arange(1,len(correctRecord)+1, 1))
+weights = weights / sum(weights)
+weights = weights * len(correctRecord)
+weights = np.atleast_2d(weights).T
+y = np.atleast_2d(y).T
+X = np.append(X, weights, 1)
+X = np.append(X, y, 1)
+
+
 params = np.array([0,0])
 m = len(X[:,1])
 
@@ -151,9 +160,12 @@ iterations = 1500
 learning_rate = .03
 y = np.array(correctRecord)
 for i in range(iterations):
-    params = params - (learning_rate/m) * (X.T @ ((1/(1+np.exp(-(X[:,0]*params[0] + X[:,1]*params[1])))) - y)) 
+    params = params - (learning_rate/m) * (X.T @ ((1/(1+np.exp(-(X[:,0]*params[0] + X[:,1]*params[1]))))*X[:,2] - y)) 
     
 predProbs = (1/(1+np.exp(-(X[:,0]*params[0] + X[:,1]*params[1]))))
 
-plt.scatter(X[:,1], predProbs)                                        
+plt.scatter(X[:,1], predProbs)          
+
+        if sum(y[len(y)-10:len(y)])>=8:
+            curStimTim = curStimTim - .005;                     
         

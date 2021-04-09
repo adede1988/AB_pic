@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.2),
-    on เมษายน 08, 2021, at 13:57
+This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
+    on April 09, 2021, at 10:34
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,14 +15,14 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
+from psychopy import sound, gui, visual, core, data, event, logging, clock
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
-from numpy.random import random, randint, normal, shuffle, choice as randchoice
+from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.1.2'
+psychopyVersion = '2020.2.10'
 expName = 'AB_pic_singleT2'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -158,7 +158,8 @@ polygon_2 = visual.Rect(
     win=win, name='polygon_2',
     width=(0.25, 0.25)[0], height=(0.25, 0.25)[1],
     ori=0, pos=(0, 0),
-    lineWidth=0,     colorSpace='rgb',  lineColor=[1,1,1], fillColor='white',
+    lineWidth=0, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
     opacity=1.0, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "response1"
@@ -167,7 +168,8 @@ polygon_4 = visual.ShapeStim(
     win=win, name='polygon_4',
     vertices=[[-(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [+(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [0,(0.8, 0.8)[1]/2.0]],
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,0,0], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 option1_t1 = visual.ImageStim(
     win=win,
@@ -185,7 +187,8 @@ polygon_5 = visual.ShapeStim(
     win=win, name='polygon_5', vertices='star7',
     size=(0.7, 0.7),
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[0,0,1],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[0,0,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 key_resp_2 = keyboard.Keyboard()
 textbox_2 = visual.TextBox2(
@@ -208,7 +211,7 @@ textbox_2 = visual.TextBox2(
 # Initialize components for Routine "feedback"
 feedbackClock = core.Clock()
 textbox_3 = visual.TextBox2(
-     win, text='', font='Browallia New',
+     win, text='default text', font='Browallia New',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='white', colorSpace='rgb',
@@ -234,7 +237,7 @@ breakTime = .1
 breakTimeContainer = []
 key_resp_3 = keyboard.Keyboard()
 textbox_6 = visual.TextBox2(
-     win, text='', font='Browallia New',
+     win, text='default text', font='Browallia New',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='white', colorSpace='rgb',
@@ -317,7 +320,8 @@ polygon_16 = visual.Rect(
     win=win, name='polygon_16',
     width=(0.25, 0.25)[0], height=(0.25, 0.25)[1],
     ori=0, pos=(0, 0),
-    lineWidth=0,     colorSpace='rgb',  lineColor=[1,1,1], fillColor='white',
+    lineWidth=0, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
     opacity=1.0, depth=-7.0, interpolate=True)
 
 # Initialize components for Routine "response1Main"
@@ -326,7 +330,8 @@ polygon_7 = visual.ShapeStim(
     win=win, name='polygon_7',
     vertices=[[-(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [+(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [0,(0.8, 0.8)[1]/2.0]],
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,0,0], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 option1_t1_2 = visual.ImageStim(
     win=win,
@@ -344,7 +349,8 @@ polygon_17 = visual.ShapeStim(
     win=win, name='polygon_17', vertices='star7',
     size=(0.7, 0.7),
     ori=0, pos=(0, 0),
-    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[0,0,1],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[0,0,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 key_resp_8 = keyboard.Keyboard()
 textbox_5 = visual.TextBox2(
@@ -374,7 +380,7 @@ breakTime = .1
 breakTimeContainer = []
 key_resp_3 = keyboard.Keyboard()
 textbox_6 = visual.TextBox2(
-     win, text='', font='Browallia New',
+     win, text='default text', font='Browallia New',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='white', colorSpace='rgb',
@@ -718,8 +724,8 @@ for thisTrial in trials:
             win.timeOnFlip(polygon_2, 'tStartRefresh')  # time at next scr refresh
             polygon_2.setAutoDraw(True)
         if polygon_2.status == STARTED:  # only update if drawing
-            polygon_2.setFillColor([1,1,1])
             polygon_2.setOpacity(curOpacity2)
+            polygon_2.setFillColor([1,1,1])
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1351,6 +1357,37 @@ for thisTrials2 in trials2:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
+        #model = LogisticRegression(solver='liblinear', random_state=0).fit(curStimTim, correctRecord)
+        if len(correctRecord)>5:
+            
+            y = np.array(correctRecord)
+            x = np.reshape(np.array(stimTimRec), (-1,1))
+           # params = np.array(params)
+            
+            
+            if len(x[:,0]) < len(x[0,:]):
+                x = x.T
+                
+            X = np.hstack((np.ones((len(x),1)),x))
+            print(X)
+            print(params)
+            iterations = 50
+            learning_rate = .03
+        
+            m = len(stimTimRec)
+            
+            for i in range(iterations):
+                weights = sqrt(np.arange(0,len(y),1))
+                weights = weights / sum(weights)
+                weights = weights * len(y)
+                params = params - (learning_rate/m) * (X.T @ ((1/(1+np.exp(-(X[:,0]*params[0] + X[:,1]*params[1])))) - y)) 
+                
+            if np.isnan(params[0]):
+                params[0] = -1
+                params[1] = 4
+        
+           
+        
         # *option1_3* updates
         if option1_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1406,6 +1443,17 @@ for thisTrials2 in trials2:
     for thisComponent in optionsMain_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    B1 = params[1]
+    B0 = params[0]
+    trials2.addData("B0", B0)
+    trials2.addData("B1", B1)
+    
+    curStimTim = -((np.log(1/.80 - 1) + B0) / B1)
+    curStimTim = curStimTim + np.random.rand() * .01 - .005
+    
+    if len(y)>10:
+        if sum(y[len(y)-10:len(y)])>=8:
+            curStimTim = curStimTim - .005; 
     trials2.addData('option1_3.started', option1_3.tStartRefresh)
     trials2.addData('option1_3.stopped', option1_3.tStopRefresh)
     trials2.addData('text_7.started', text_7.tStartRefresh)
@@ -1452,6 +1500,7 @@ for thisTrials2 in trials2:
         if checkForOff: #there's an image on screen and we need to know to take it off
             if t>offSets[ii]:
                 print(str(t) + "offset!")
+                trials2.addData('stimOFF'+str(ii), str(t))
                 curOpacity2 = 1
                 maskCol = [random.random(), random.random(), random.random()]
                 checkForOff = False
@@ -1459,6 +1508,7 @@ for thisTrials2 in trials2:
         else: #the mask is up right now, check for new image
             if t>onSets[ii]:
                 print(str(t) + "onSet!")
+                trials2.addData('stimON'+str(ii), str(t))
                 curOpacity2 = 0
                 checkForOff = True
                 checkForOn = False
@@ -1519,8 +1569,8 @@ for thisTrials2 in trials2:
             win.timeOnFlip(polygon_16, 'tStartRefresh')  # time at next scr refresh
             polygon_16.setAutoDraw(True)
         if polygon_16.status == STARTED:  # only update if drawing
-            polygon_16.setFillColor([1,1,1])
             polygon_16.setOpacity(curOpacity2)
+            polygon_16.setFillColor([1,1,1])
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1666,39 +1716,7 @@ for thisTrials2 in trials2:
     stimTimRec.append(curStimTim)
     stimTimRec.append(0)
     stimTimRec.append(.2)
-    #model = LogisticRegression(solver='liblinear', random_state=0).fit(curStimTim, correctRecord)
-    if len(correctRecord)>5:
-        
-        y = np.array(correctRecord)
-        x = np.reshape(np.array(stimTimRec), (-1,1))
-       # params = np.array(params)
-        
-        
-        if len(x[:,0]) < len(x[0,:]):
-            x = x.T
-            
-        X = np.hstack((np.ones((len(x),1)),x))
-        print(X)
-        print(params)
-        iterations = 3000
-        learning_rate = .03
     
-        m = len(stimTimRec)
-        
-        for i in range(iterations):
-            params = params - (learning_rate/m) * (X.T @ ((1/(1+np.exp(-(X[:,0]*params[0] + X[:,1]*params[1])))) - y)) 
-            
-        if np.isnan(params[0]):
-            params[0] = -1
-            params[1] = 4
-    
-        B1 = params[1]
-        B0 = params[0]
-        trials2.addData("B0", B0)
-        trials2.addData("B1", B1)
-    
-        curStimTim = -((np.log(1/.80 - 1) + B0) / B1)
-        curStimTim = curStimTim
     
     
     
@@ -1823,6 +1841,7 @@ for thisTrials2 in trials2:
         
     
     trials.addData("cor2", cor2)
+    
     # check responses
     if key_resp_8.keys in ['', [], None]:  # No response was made
         key_resp_8.keys = None
