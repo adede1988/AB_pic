@@ -1913,7 +1913,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="B1 = params[1]&amp;#10;B0 = params[0]&amp;#10;trials2.addData(&quot;B0&quot;, B0)&amp;#10;trials2.addData(&quot;B1&quot;, B1)&amp;#10;&amp;#10;curStimTim = -((np.log(1/.80 - 1) + B0) / B1)&amp;#10;curStimTim = curStimTim + np.random.rand() * .01 - .005&amp;#10;&amp;#10;if len(y)&gt;10:&amp;#10;    if sum(y[len(y)-10:len(y)])&gt;=8:&amp;#10;        curStimTim = curStimTim - .005; " valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if len(correctRecord)&gt;5:&amp;#10;    B1 = params[1]&amp;#10;    B0 = params[0]&amp;#10;    trials2.addData(&quot;B0&quot;, B0)&amp;#10;    trials2.addData(&quot;B1&quot;, B1)&amp;#10;&amp;#10;    curStimTim = -((np.log(1/.80 - 1) + B0) / B1)&amp;#10;    curStimTim = curStimTim + np.random.rand() * .01 - .005&amp;#10;&amp;#10;    if len(y)&gt;10:&amp;#10;        if sum(y[len(y)-10:len(y)])&gt;=8:&amp;#10;            curStimTim = curStimTim - .005; " valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_13" valType="code"/>
       </CodeComponent>

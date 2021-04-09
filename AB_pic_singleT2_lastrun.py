@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on April 09, 2021, at 10:34
+    on April 09, 2021, at 10:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1443,17 +1443,18 @@ for thisTrials2 in trials2:
     for thisComponent in optionsMain_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    B1 = params[1]
-    B0 = params[0]
-    trials2.addData("B0", B0)
-    trials2.addData("B1", B1)
+    if len(correctRecord)>5:
+        B1 = params[1]
+        B0 = params[0]
+        trials2.addData("B0", B0)
+        trials2.addData("B1", B1)
     
-    curStimTim = -((np.log(1/.80 - 1) + B0) / B1)
-    curStimTim = curStimTim + np.random.rand() * .01 - .005
+        curStimTim = -((np.log(1/.80 - 1) + B0) / B1)
+        curStimTim = curStimTim + np.random.rand() * .01 - .005
     
-    if len(y)>10:
-        if sum(y[len(y)-10:len(y)])>=8:
-            curStimTim = curStimTim - .005; 
+        if len(y)>10:
+            if sum(y[len(y)-10:len(y)])>=8:
+                curStimTim = curStimTim - .005; 
     trials2.addData('option1_3.started', option1_3.tStartRefresh)
     trials2.addData('option1_3.stopped', option1_3.tStopRefresh)
     trials2.addData('text_7.started', text_7.tStartRefresh)
